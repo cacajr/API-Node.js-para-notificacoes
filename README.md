@@ -8,7 +8,7 @@ Você pode criar uma conta gratuita no link a seguir: https://www.twilio.com/try
 Veja também como [comprar um número](https://www.youtube.com/watch?v=f9jE5ywz8cs&t=3s) e [criar uma SandBox](https://www.youtube.com/watch?v=O2PB6o2E8aA) no Twilio. Isso será necessário para efetuar as requisições de envio de SMS e mensagem via WhatsApp.
 
 ## Passo 1: Clonando o repositório
-Clone o repositório clicando no botão **Clonar** na própria plataforma GitHug ou, se preferir, use o seguinte comando git:<br />
+Clone o repositório clicando no botão **Clonar** na própria plataforma GitHub ou, se preferir, use o seguinte comando git:<br />
 $ git clone https:<span></span>//github.com/cacajr/API-Node.js-para-notificacoes.git
 
 ## Passo 2: Instalando dependências
