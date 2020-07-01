@@ -26,4 +26,20 @@ app.post('/sms', (req, res) => {
     res.json({ status: 'Your message was sent!' });
 })
 
+// Serviço de envio de mensagens WhatsApp via Twilio
+app.post('/whatsapp', (req, res) => {
+    const { number, message, mediaUrl } = req.body;
+
+    client.messages
+    .create({
+        mediaUrl: [mediaUrl],
+        from: 'whatsapp:+14155238886',
+        body: message,
+        to: 'whatsapp:' + number
+    })
+    .then(message => console.log(message.sid));
+
+    res.json({ status: 'Your message was sent!' });
+})
+
 app.listen(3333);
