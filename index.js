@@ -12,9 +12,8 @@ const app = express();
 app.use(express.json());
 
 // Serviço de envio de SMS via Twilio
-app.get('/sms', (req, res) => {
-    const number = req.body.number
-    const message = req.body.message
+app.post('/sms', (req, res) => {
+    const { number, message } = req.body;
 
     client.messages
     .create({
